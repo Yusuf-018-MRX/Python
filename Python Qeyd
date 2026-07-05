@@ -1,0 +1,267 @@
+# Alqoritm nədir?
+# Alqoritm müəyyən bir işi 
+# görmək üçün izlənən addımlardır
+# Alqoritmin növləri:
+# 1. Xətti alqoritm - addımlar ardıcıl şəkildə yerinə yetirilir
+# 2. Budaqlanan alqoritm (Şərtli alqoritm) - müəyyən şərt daxilində şaxələnən alqoritmdir
+# 3. Dövrü alqoritm - müəyyən şərt daxilində təkrarlanan alqoritmdir
+# Python nədir?
+# Python yüksək səviyyəli proqramlaşdırma dilidir
+# İnterpretasiya olunan dildir - run edilərkən tərcümə olunur (Sətir-sətir)
+# Python kodu maşın dilinə (1, 0) çevrilir
+# Kompilyasiya olunan dillər - C, C++, Java və s.
+# Kompilyasiya olunan dillərdə kod bütöv şəkildə tərcümə olunur və sonra run edilir
+# Data type - məlumat növü
+# Primitive Məlumat növləri:
+# 1. Integer (int) - tam ədəd (5, -10, 0)
+# 2. Float (float) - onluq ədəd (5.0, -10.5, 0.0)
+# 3. String (str) - mətn (\"Hello, World!\", 'Python')
+# 4. Boolean (bool) - məntiqi dəyər (True, False)
+# Non-Primitive Məlumat növləri:
+# 1. List - siyahı ([1, 2, 3], ['a', 'b', 'c']) - indekslənə bilən, dəyişdirilə bilən, sıralı kolleksiya, duplikatlara icazə verir
+# 2. Tuple - dəyişməz siyahı ((1, 2, 3), ('a', 'b', 'c')) - indekslənə bilən, dəyişdirilə bilməyən!, sıralı kolleksiya, duplikatlara icazə verir
+# 3. Dictionary - lüğət ({'key': 'value'}, {'name': 'Alice'}) - key-value cütlüklərindən ibarət, indekslənə bilmir, dəyişdirilə bilən, sıralı deyil (3.7 sıralı), duplikatlara icazə vermir (key)
+# 4. Set - cəmləmə ({1, 2, 3}, {'a', 'b', 'c'}) - indekslənə bilmir, dəyişdirilə bilən, sıralı deyil, duplikatlara icazə vermir
+# Dəyişən (Variable) - məlumatları yaddaşda saxlamaq üçün istifadə olunan adlandırılmış konteynerdir
+# Dəyişən - adı, tipi, dəyəri, ölçüsü, adresi olan ramda yer tutan yaddaş sahəsidir
+# Dəyişənin adlandırılması qaydaları:
+# 1. Dəyişən adı hərf (a-z, A-Z) və ya alt xətt (_) ilə başlamalıdır
+# 2. Dəyişən adı rəqəm (0-9) ilə başlaya bilməz
+# 3. Dəyişən adı yalnız hərf, rəqəm və alt xəttdən ibarət ola bilər
+# 4. Dəyişən adı boşluq və xüsusi simvollardan ibarət ola bilməz
+# 5. Dəyişən adı Pythonda olan keywordlərdən (if, else, for, while, def, return, import, from, as, class, try, except, finally, with, lambda, pass, break, continue, global, nonlocal, assert, yield və s.) istifadə edilə bilməz
+# 6. Dəyişən adı böyük-kiçik hərf fərqlidir (name, Name, NAME fərqli dəyişənlərdir) - Case Sensitive
+# Operators (Əməliyyatçılar):
+# 1. Aritmetik operators (Riyazi əməliyyatçılar):
+# + - toplama
+# - - çıxma
+# * - vurma
+# / - bölmə
+# // - tam bölmə
+# % - qalıq tapma
+# ** - qüvvətə qaldırma
+# 2. Comparison operators (Müqayisə operatorları) (nəticə boolean olur):
+# == - bərabərdir
+# != - bərabər deyil
+# > - böyükdür
+# < - kiçikdir
+# >= - böyük və ya bərabərdir
+# <= - kiçik və ya bərabərdir
+# 3. Logical operators (Məntiqi operatorlar) (nəticə boolean olur):
+# and - və (hər iki şərt doğru olmalıdır)
+# or - və ya (hər iki şərtdən biri doğru olmalıdır)
+# not - deyil (şərtin doğru olmasını tərsinə çevirir)
+# 4. Assignment operators (Mənimsətmə operatorları):
+# = - təyin etmə
+# += - toplama və mənimsətmə
+# -= - çıxma və mənimsətmə
+# *= - vurma və mənimsətmə
+# /= - bölmə və mənimsətmə
+# //= - tam bölmə və mənimsətmə
+# %= - qalıq tapma və mənimsətmə
+# **= - qüvvətə qaldırma və mənimsətmə
+# 5. Identity operators (Eynilik operatorları) (nəticə boolean olur):
+# is - eynidir (iki dəyişənin yaddaş ünvanı eynidirsə)
+# is not - eyni deyil (iki dəyişənin yaddaş ünvanı fərqlidirsə)
+if type(5) is int:
+    print("5 is an integer")
+if type(5) is not str:
+    print("5 is not a string")
+# 6. Membership operators (Üzvlük operatorları) (nəticə boolean olur):
+# in - daxilindədir (element kolleksiyanın içindədirsə)
+# not in - daxilində deyil (element kolleksiyanın içində deyilsə)
+my_list = [1, 2, 3, 4, 5]
+if 3 in my_list:
+    print("3 is in the list")
+if 6 not in my_list:
+    print("6 is not in the list")
+# Şərt operatorlar:
+# if - əgər
+# else - əks halda
+# elif - əks halda əgər (else if)
+# if şərti yoxlayır, əgər şərt doğru 
+# (True) olarsa, if blokunun içi işlədir
+if True:
+    print("Hello, World!")  # print funksiyası ekrana məlumat çıxarmaq üçün istifadə olunur
+# Boş string - false
+# 0 - false
+# 0.0 - false
+# None - false
+# Boş siyahı - false
+# " " - true
+# 1 - true
+# -1 - true
+# 0.1 - true
+# [1, 2, 3] - true
+# elif - 2 və daha çox şərt yoxlamaq üçün istifadə olunur
+# else - yuxarıdakı şərtlərin heç biri doğru (True) olmadıqda işlədir
+# if, elif, else blokları birlikdə istifadə olunur
+# if bloku tək ola bilər (else və ya elif olmadan)
+# elif və else bloku if blokundan sonra gəlməlidir
+# for - müəyyən aralıqda təkrarlanan dövrü alqoritmdir
+for i in range(3,50,3):  # 3-dən 49-a kimi (50 daxil deyil)
+    print(i)
+# tek arquementli range - 0-dan arqumentə qədər (arqument daxil deyil)
+# iki arqumentli range - birinci arqumentdən ikinci arqumentə qədər (ikinci arqument daxil deyil)
+# üç arqumentli range - birinci arqumentdən ikinci arqumentə qədər, üçüncü arqument addım (step) kimi istifadə olunur
+# while - müəyyən şərt daxilində təkrarlanan dövrü alqoritmdir
+# şərt doğru (True) olduğu müddətcə while bloku işlədir
+# şərt yalnış (False) olduqda while bloku dayandırılır
+# while - sonsuz dövrü alqoritm yarada bilər
+# while True:
+#     print("Hello, World!")
+# break - dövrü alqoritmdən çıxmaq üçün istifadə olunur
+# continue - dövrü alqoritmdə növbəti iterasiyaya keç
+# iterasiya - təkrarlanan hər bir addım
+# pass - boş blok yaratmaq üçün istifadə olunur
+# stringin metodları - stringin üzərində əməliyyat aparmaq üçün istifadə olunan funksiyalardır
+# metodlar nöqtə (.) ilə çağırılır
+# stringin metodları stringi dəyişmir, yeni string qaytarır
+# 1. lower() - stringi kiçik hərflərə çevirir
+# 2. upper() - stringi böyük hərflərə çevirir
+# 3. title() - stringin hər sözünün ilk hərfini böyük hərfə çevirir
+# 4. capitalize() - stringin ilk hərfini böyük hərfə çevirir, qalan hərfləri kiçik hərfə çevirir
+# 5. replace() - stringin müəyyən hissəsini başqa string ilə əvəz edir
+# 6. strip() - stringin əvvəlində və sonunda olan boşluqları silir
+# 7. isalpha() - stringin yalnız hərflərdən ibarət olub olmadığını yoxlayır (boolean qaytarır)
+# 8. isdigit() - stringin yalnız rəqəmlərdən ibarət olub olmadığını yoxlayır (boolean qaytarır)
+# 9. split() - stringi müəyyən simvola görə parçalayıb siyahı şəklində qaytarır
+əlifba = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
+print(əlifba.split(","))  # vergülə görə parçalayır
+# 10. join() - siyahını müəyyən simvol ilə birləşdirib string şəklində qaytarır
+hərflər = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+print("-".join(hərflər))  # boşluq ilə birləşdirir
+# Listin metodları - listin üzərində əməliyyat aparmaq üçün istifadə olunan funksiyalardır
+# metodlar nöqtə (.) ilə çağırılır
+# listin metodları listi dəyişdirir
+# 1. append() - listin sonuna element əlavə edir
+# 2. insert() - listin müəyyən indeksinə element əlavə edir
+# 3. extend() - bir listi digər listə əlavə edir +=
+# 4. remove() - listdən müəyyən elementi silir (ilk tapdığı elementi silir)
+# 5. pop() - listdən müəyyən indeksi silir və silinən elementi qaytarır
+myList = [1, 2, 3, 4, 5]
+print(myList.pop(2))  # 2-ci indeksi silir və silinən elementi qaytarır (3)
+print(myList)  # [1, 2, 4, 5]
+# 6. clear() - listin bütün elementlərini silir
+# 7. index() - listdə müəyyən elementin indeksini qaytarır (ilk tapdığı elementin indeksini qaytarır)
+# 8. count() - listdə müəyyən elementin sayını qaytarır
+# 9. sort() - listin elementlərini kiçikdən böyüyə sıralayır
+# 10. reverse() - listin elementlərinin sırasını tərsinə çevirir
+# ------------------------
+# Type casting (Tip çevirmə) - bir məlumat növünü digər məlumat növünə çevirmək
+# 2 növ type casting var:
+# 1. Implicit type casting (Qeyri-aşkar tip çevirmə) - Python avtomatik olaraq bir məlumat növünü digər məlumat növünə çevirir
+# 2. Explicit type casting (Aşkar tip çevirmə) - proqramçının özünün bir məlumat növünü digər məlumat növünə çevirməsi
+# Explicit type casting üçün aşağıdakı funksiyalar istifadə olunur:
+# implicit type casting - avtomatik
+x = 5       # int
+y = 2.0     # float
+z = x + y   # int + float -> float
+print(z)    # 7.0
+print(type(z))  # <class 'float'>
+# explicit type casting - proqramçının özü
+a = 5       # int
+b = 2.0     # float
+c = a + int(b)  # int + int -> int
+print(c)    # 7
+print(type(c))  # <class 'int'>
+
+# Funksiyalar (Functions) - müəyyən işi görən kod bloklarıdır
+# Funksiyalar kodun təkrar istifadəsini təmin edir
+# Funksiyalar proqramın strukturlaşdırılmasını təmin edir
+# Funksiyalar proqramın oxunaqlılığını artırır
+# İdeal funksiyanın xüsusiyyətləri:
+# 1. Yalnız bir işi görməlidir
+# 2. Qısa və yığcam olmalıdır
+# 3. Adı funksiyanın nə iş gördüyünü əks etdirməlidir
+# Funksiya necə yaradılır?
+# def açar sözü ilə yaradılır (keyword)
+# def toplama(a, b): # parametrlər (parameters) - funksiyaya ötürülən dəyərlər
+#     return a + b  # return açar sözü ilə funksiyanın nəticəsi qaytarılır
+# cavab = toplama(5, 10)  # arqumentlər (arguments) - funksiyaya ötürülən dəyərlər
+# print(cavab)  # 15
+# def greeting(name):  # default parameter (default arqument)
+#     print(f"Hello, {name}!")  # f-string - formatlanmış string
+# greeting("Ömürşah")
+# greeting()  # TypeError: greeting() missing 1 required positional argument: 'name'
+def greeting(name="Qonaq"):  # default parameter (default arqument) - funksiya yaranan an qiymeti olan parametre default parameter adlanir
+    print(f"Hello, {name}!")  # f-string - formatlanmış string
+
+greeting("Ömürşah")  # Hello, Ömürşah!
+greeting()  # Hello, Qonaq!
+# ilk yaranan default parametrden sonra gelen butun parametreler default parametr olmalidir
+def info(name, age=18, city="Baku"):  # default parameter (default arqument)
+    print(f"Name: {name}, Age: {age}, City: {city}")
+
+info("Ömürşah", 20, "Ganja")  # Name: Ömürşah, Age: 20, City: Ganja
+info("Ömürşah", 20)  # Name: Ömürşah, Age: 20, City: Baku
+info("Ömürşah")  # Name: Ömürşah, Age: 18, City: Baku
+
+# Moduallar (Modules) - funksiyalar, dəyişənlər və siniflərdən ibarət olan fayllardır
+# Moduallar kodun təkrar istifadəsini təmin edir
+# Her python faylı bir moduldur
+# import açar sözü ilə modullar daxil edilir
+# import math  # math modulu riyazi əməliyyatlar üçün istifadə olunur
+# from açar sözü ilə modulların müəyyən hissələri daxil edilir
+# from math import sqrt, pi  # math modulundan yalnız sqrt və pi daxil edilir
+# import math as m  # math modulu m adı ilə daxil edilir
+# from math import *  # math modulundakı bütün funksiyalar və dəyişənlər daxil edilir
+
+# OOP (Object Oriented Programming) - obyekt yönümlü proqramlaşdırma
+# Procedural Programming - prosedur yönümlü proqramlaşdırma
+# OOP-də hər şey obyektlər üzərində qurulur
+# OOP-nin əsas prinsipləri:
+# 1. Encapsulation (Kapsülləmə) - məlumatların və funksiyaların bir obyekt daxilində təhlükəsiz saxlanılması və gizlənməsi
+# 2. Abstraction (Abstraksiya) - mürəkkəb sistemlərin sadələşdirilməsi, yalnız vacib məlumatların göstərilməsi
+# 3. Inheritance (Varislik) - yeni siniflərin mövcud siniflərdən irsən alınması
+# 4. Polymorphism (Polimorfizm) - eyni adın fərqli funksiyaları yerinə yetirməsi
+# Sinif (Class) - obyektlərin şablonudur
+# Obyekt (Object) - sinifin nümunəsidir (instance)
+class Car:  # sinifin yaradılması
+    def __init__(self, brand, model, year, color):  # konstruktor - obyekt yaradılarkən çağırılır
+        self.brand = brand  # atribut - sinifin dəyişəni
+        self.model = model
+        self.year = year
+        self.color = color # self - obyektin özünü göstərir
+
+    def info(self):  # metod - sinifin funksiyası
+        print(f"Brand: {self.brand}, Model: {self.model}, Year: {self.year}")
+
+car1 = Car("Toyota", "Camry", 2020, "White")  # obyektin yaradılması
+car2 = Car("Honda", "Civic", 2019, "Black")
+car1.info()  # Brand: Toyota, Model: Camry, Year: 2020
+car2.info()  # Brand: Honda, Model: Civic, Year: 2019
+# İrsi (Inheritance) - yeni sinifin mövcud sinifdən irsən alınması
+class ElectricCar(Car):  # ElectricCar sinifi Car sinifindən irsən alınır
+    def __init__(self, brand, model, year, color, battery_size):  # konstruktor
+        super().__init__(brand, model, year, color)  # super() - valideyn sinifin konstruktorunu çağırır
+        self.battery_size = battery_size  # yeni atribut
+
+    def info(self):  # metod
+        super().info()  # valideyn sinifin info metodunu çağırır
+        print(f"Battery Size: {self.battery_size} kWh")
+
+electric_car1 = ElectricCar("Tesla", "Model S", 2021, "Red", 100)  # obyektin yaradılması
+electric_car1.info()
+# Encapuslation (Kapsülləmə) - məlumatların və funksiyaların bir obyekt daxilində təhlükəsiz saxlanılması və gizlənməsi
+class Person:
+    def __init__(self, name, age):
+        self.__name = name  # private atribut - iki alt xətt ilə başlayır
+        self.__age = age
+
+    def get_name(self):  # getter metod - private atributa daxil olmaq üçün istifadə olunur
+        return self.__name
+
+    def set_name(self, name):  # setter metod - private atributu dəyişdirmək üçün istifadə olunur
+        self.__name = name
+
+    def get_age(self):
+        return self.__age
+
+    def set_age(self, age):
+        if age >= 0:
+            self.__age = age
+        else:
+            print("Age cannot be negative")
+
+person1 = Person("Alice", 25)
